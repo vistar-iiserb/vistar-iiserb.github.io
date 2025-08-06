@@ -29,9 +29,6 @@ const config: Config = {
       },
     },
   },
-    variants: { // all the following default to ['responsive']
-        imageRendering: ['responsive'],
-    },
   darkMode: "class",
-  plugins: [heroui(), require('tailwindcss-image-rendering')()]};
+  plugins: [heroui()]};
 export default config;
