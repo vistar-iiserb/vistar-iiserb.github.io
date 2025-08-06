@@ -42,20 +42,20 @@ const Blog = ({posts}: { posts: BlogListType[] }) => {
                                 posts.map((post: BlogListType, index) => (
                                     <Link target="_blank" href={`blogs/${post.slug}`} key={index}>
                                         <div
-                                            className={` relative   group cursor-pointer items-start min-h-[400px] border border-black/20  rounded-xl z-[0]   gap-4 `}>
+                                            className={` relative   group cursor-pointer items-start min-h-[500px] border   border-neutral-500/20 shadow-[-2px_4px_27px_-10px_rgba(0,_0,_0,_0.1)]  rounded-xl z-[0]   gap-4 `}>
                                             <div className="z-[100]   p-6  ">
                                                 {/*<h2 className="bg-white/50 backdrop-blur-lg hover:bg-white  rounded-lg text-sm w-fit px-2 py-1 mb-4 text-black ">{post.categories[0].title}</h2>*/}
 
                                                 {/* <Link href={`blogs/${post.title}`}> */}
                                                 <div>
 
-                                                <h2 className=" duration-[0.6s] text-black cursor-pointer  transition text-2xl">
+                                                <h2 className=" duration-[0.6s] text-black cursor-pointer  transition text-xl">
                                                     {post.title}
                                                 </h2>
                                                 {/* </Link> */}
 
-                                                <h2 className="mt-3 text-neutral-800 ">
-                                                    <button className={'border border-black/20 rounded-[25px] px-3 py-1 text-sm flex gap-1 items-center'}>Learn More <ChevronRight size={15} /> </button>
+                                                <h2 className="mt-3  text-neutral-800 ">
+                                                    <button className={'hover:bg-neutral-200 transition duration-[500ms] border border-black/20 rounded-[25px] px-3 py-1 text-sm flex gap-1 items-center'}>Learn More <ChevronRight size={15} /> </button>
                                                 </h2>
                                                 </div>
 

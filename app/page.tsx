@@ -4,6 +4,7 @@ import "./globals.css";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Blogs from "@/app/blogs/page";
+import Footer from "@/components/Footer";
 
 export default function Home() {
     // useEffect(() => {
@@ -15,11 +16,15 @@ export default function Home() {
 
 
     return (
-        <main className="flex md:w-[80%] mx-auto relative flex-col min-h-screen overflow-hidden ">
-            <Hero/>
-            <About/>
-            <Blogs/>
-        </main>
+        <div>
+
+            <main className="flex md:w-[80%] mx-auto relative flex-col min-h-screen overflow-hidden ">
+                <Hero/>
+                <About/>
+                <Blogs/>
+            </main>
+            <Footer/>
+        </div>
     )
         ;
 }
