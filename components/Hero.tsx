@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import {FlickeringGrid} from "@/components/magicui/flickering-grid";
 import Navbar from "./Navbar";
 import { PageWrapper } from "./PageWrapper";
 import Component from "./infinite-carousel";
@@ -14,17 +14,20 @@ export default function Hero() {
           <div className=" h-fit ">
             <Navbar />
           </div>
+              <FlickeringGrid
+                  className="inset-0 z-0 absolute min-h-screen w-full border [mask-image:radial-gradient(400px_circle_at_center,black,transparent)]"
+                  squareSize={6}
+                  gridGap={12}
+                  color="black"
+                  maxOpacity={0.1}
+                  flickerChance={1}
+              />
           <div className="w-full  items-center flex md:flex-row flex-col justify-between h-[80%]   text-gray-800  bg-white   text-left  ">
             <div className="flex flex-col  p-6 md:p-12 justify-between ">
               <div className={` flex flex-col z-[10] md:w-[65%] mt-12 `}>
-    {/*VISTAR ARTIFICIAL*/}
-                  <h1 className="font-bold ml-2  lg:text-6xl text-5xl   md:mt-0 mt-24">
-                    VISTAR,<br /> IISER Bhopal
-                      {/* Vision for*/}
-                    {/*Technology <br />  and*/}
-                    {/*Artificial*/}
-                    {/*Intelligence<br />*/}
-                    {/*Research*/}
+                  <h1 className="font-bold ml-2  lg:text-6xl text-5xl flex flex-col md:mt-0 mt-24">
+                      <span className={'bg-gradient-to-br from-blue-500 to-pink-300 text-white px-3 py-1 w-fit rounded-xl '}>VISTAR</span>
+                      <span className={''}>IISER Bhopal</span>
                 </h1>
                 <p className="mt-4 ml-2  text-gray-500 text-md">
                     The Premier AI Club at IISER Bhopal. Explore, innovate, and collaborate at the forefront of Artificial Intelligence. Join us for hands-on workshops, expert talks, and cutting-edge projects with a community passionate about AI.

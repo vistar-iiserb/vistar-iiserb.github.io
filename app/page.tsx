@@ -19,6 +19,7 @@ export default function Home() {
         <div>
 
             <main className="flex md:w-[80%] mx-auto relative flex-col min-h-screen overflow-hidden ">
+                asdfasdf
                 <Hero/>
                 <About/>
                 <Blogs/>
