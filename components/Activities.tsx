@@ -63,8 +63,8 @@ export default function Activities() {
                                     {activity.icon}
                                 </div>
                                 <div>
-                                    <h1 className={'font-bold text-md  mt-4 mb-2'}>{activity.heading}</h1>
-                                    <p className={'text-sm text-neural-500'}>{activity.description}</p>
+                                    <h1 className={'font-bold text-md text-black  mt-4 mb-2'}>{activity.heading}</h1>
+                                    <p className={'text-sm text-neutral-500'}>{activity.description}</p>
                                 </div>
                             </div>
 
