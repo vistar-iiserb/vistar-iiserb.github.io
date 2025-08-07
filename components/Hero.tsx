@@ -26,7 +26,7 @@ export default function Hero() {
             <div className="flex flex-col  p-6 md:p-12 justify-between ">
               <div className={` flex flex-col z-[10] md:w-[65%] mt-12 `}>
                   <h1 className="font-bold ml-2  lg:text-6xl text-5xl flex flex-col md:mt-0 mt-24">
-                      <span className={'bg-gradient-to-br from-blue-500 to-pink-300 text-white px-3 py-1 w-fit rounded-xl '}>VISTAR</span>
+                      <span className={'bg-gradient-to-br from-blue-500 from-[40%] to-pink-300 shadow-md border border-slate-300 text-white px-3 py-1 w-fit rounded-xl '}>VISTAR</span>
                       <span className={''}>IISER Bhopal</span>
                 </h1>
                 <p className="mt-4 ml-2  text-gray-500 text-md">
@@ -38,15 +38,15 @@ export default function Hero() {
 
                   <div className={'mt-7 flex gap-2'}>
                       <button className={'text-sm bg-blue-500 text-white px-4 py-2 font-medium rounded-md'}>Join Us</button>
-                      <button className={'text-sm border-pink-500 text-blue-500 px-4 py-2 font-medium rounded-md'}>About Us</button>
+                      <button className={'text-sm border-pink-800 text-blue-500 px-4 py-2 font-medium rounded-md'}>About Us</button>
                   </div>
               </div>
             <img src={'brain.jpg'} className={'w-[30%] borderborder-black/20  z-[10] object-cover aspect-square rounded-xl'} />
             {/*<img src={'brain.jpg'} className={'w-[40%] z-[0] right-6 blur-[100px] absolute object-cover aspect-square rounded-xl'} />*/}
             </div>
 
-            {/*<div className="absolute w-[200px] h-[200px] blur-[100px] animate-spin dark:bg-pink-500 bg-gray-300 rounded-full top-48 left-48"></div>*/}
-            {/*<div className="absolute w-[300px] h-[200px] blur-[130px] animate-spin dark:bg-blue-500 bg-zinc-400 rounded-full top-48 left-80"></div>*/}
+            {/*<div className="absolute w-[200px] h-[200px] blur-[70px] animate-spin dark:bg-rose-500 bg-gray-300 rounded-full top-48 left-48"></div>*/}
+            {/*<div className="absolute w-[300px] h-[200px] blur-[70px] animate-spin dark:bg-blue-500 bg-zinc-400 rounded-full top-48 left-80"></div>*/}
             {/*<div className="absolute w-[300px] h-[200px] blur-[130px] animate-spin dark:bg-white/50 bg-black/40 rounded-full top-52 left-80"></div>*/}
           </div>
         </div>
