@@ -19,7 +19,7 @@ export default function About() {
                 </h1>
                 <p className=" text-gray-800  mt-4 md:mt-12  text-sm md:text-lg   ">
 
-                    Vision for Technology and Artificial Intelligence Reserach (VISTAR) is the premier hub for students passionate about Artificial Intelligence on campus. We are committed to building an inclusive and dynamic community where students—from complete beginners to experienced researchers—can explore and contribute to the field of AI.
+                    Vision for Technology and Artificial Intelligence Research (VISTAR) is the premier hub for students passionate about Artificial Intelligence on campus. We are committed to building an inclusive and dynamic community where students—from complete beginners to experienced researchers—can explore and contribute to the field of AI.
 
                     Our mission is to empower students with the knowledge, tools, and collaborative environment needed to engage meaningfully with AI research and development. We aim to serve as a central platform for AI-related learning and innovation at IISER Bhopal, bridging the gap between theory, application, and interdisciplinary exploration.
 

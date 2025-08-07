@@ -11,6 +11,7 @@ import {
 } from "@heroui/dropdown";
 import {Button} from "@heroui/button";
 import {ModeToggle} from "./DarkModeToggle";
+import {BotMessageSquare} from "lucide-react";
 
 export default function Navbar() {
     const navLinks = [
@@ -42,20 +43,25 @@ export default function Navbar() {
 
     return (
         <header
-            className=" z-[99999]  mx-auto mt-12 bg-white   py-4 text-gray-800 tracking-tight  flex flex-row  items-center justify-between">
-      <span
-          className="cursor-pointer md:flex hidden overflow-hidden  z-[99999]  group ml-12  items-center gap-6 text-md">
-        {navLinks.map((navLink) => (
-            <Link
-                key={navLink.id}
-                href={navLink.link}
-                style={{"--text": `"${navLink.title}"`}}
-                className=" overflow-hidden "
-            >
-                <h1 className=" hover:font-bold transition">{navLink.title}</h1>
-            </Link>
-        ))}
-      </span>
+            className=" z-[99999]  mx-auto mt-4 md:mt-12 bg-white rounded-[20px]   p-4 text-gray-800 tracking-tight  flex flex-row  items-center justify-between">
+            <div
+                className="cursor-pointer flex justify-between   w-full z-[99999]  group   items-center  text-md">
+                <span className={'flex items-center gap-2 font-bold'}> <BotMessageSquare />VISTAR</span>
+                <div className={'gap-6 md:flex hidden items-center overflow-hidden'}>
+
+                    {navLinks.map((navLink) => (
+                        <Link
+                            key={navLink.id}
+                            href={navLink.link}
+                            style={{"--text": `"${navLink.title}"`}}
+                            className=" overflow-hidden "
+                        >
+                            <h1 className=" transition">{navLink.title}</h1>
+                        </Link>
+                    ))}
+                    <button className={'bg-black text-white py-2  rounded-xl px-4'}>Join Us</button>
+                </div>
+            </div>
 
             <div className=" md:hidden ">
                 <Dropdown className="bg-gray-800">
