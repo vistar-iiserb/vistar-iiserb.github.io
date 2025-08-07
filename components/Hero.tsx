@@ -26,7 +26,7 @@ export default function Hero() {
             <div className="flex flex-col  p-6 md:p-12 justify-between ">
               <div className={` flex flex-col z-[10] md:w-[65%] mt-12 `}>
                   <h1 className="font-bold ml-2  lg:text-6xl text-5xl flex flex-col md:mt-0 mt-24">
-                      <span className={'bg-gradient-to-br from-blue-500 from-[40%] to-pink-300 shadow-md border border-slate-300 text-white px-3 py-1 w-fit rounded-xl '}>VISTAR</span>
+                      <span className={'bg-gradient-to-br from-black from-[40%] to-blue-300 shadow-md border border-slate-300 text-white px-3 py-1 w-fit rounded-xl '}>VISTAR</span>
                       <span className={''}>IISER Bhopal</span>
                 </h1>
                 <p className="mt-4 ml-2  text-gray-500 text-md">
@@ -37,8 +37,8 @@ export default function Hero() {
               </div>
 
                   <div className={'mt-7 flex gap-2'}>
-                      <button className={'text-sm bg-blue-500 text-white px-4 py-2 font-medium rounded-md'}>Join Us</button>
-                      <button className={'text-sm border-pink-800 text-blue-500 px-4 py-2 font-medium rounded-md'}>About Us</button>
+                      <button className={'text-sm bg-black text-white px-4 py-2 font-medium rounded-md'}>Join Us</button>
+                      <button className={'text-sm border border-blue-500 text-blue-500 px-4 py-2 font-medium rounded-md'}>About Us</button>
                   </div>
               </div>
             <img src={'brain.jpg'} className={'w-[30%] borderborder-black/20  z-[10] object-cover aspect-square rounded-xl'} />
