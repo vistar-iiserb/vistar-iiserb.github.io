@@ -17,7 +17,11 @@ export default function About() {
             <h1
                 className={` font-bold ml-6 text-4xl md:text-6xl mt-6 text-gray-800  `}
             >
-                About VISTAR
+                About&nbsp;
+                <span className={'bg-gradient-to-br from-black via-neutral-600 to-neutral-200  bg-clip-text text-transparent '}>
+
+                VISTAR
+                </span>
             </h1>
             <div className={'flex flex-col-reverse md:flex-row justify-between gap-12'}>
 

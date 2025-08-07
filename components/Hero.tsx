@@ -62,7 +62,7 @@ export default function Hero() {
                                     IISER Bhopal
                                 </span>
                                 <span
-                                    className={'shadow-md bg-gradient-to-br from-white via-neutral-500 to-neutral-200 text-shadow-md text-shadow-white bg-clip-text text-transparent lg:text-8xl text-7xl text-center  text-white px-3 py-1 w-fit rounded-xl '}>
+                                    className={'shadow-md bg-gradient-to-br from-white via-neutral-500 to-neutral-200  bg-clip-text text-transparent lg:text-8xl text-7xl text-center   px-3 py-1 w-fit rounded-xl '}>
                                     VISTAR
                                 </span>
                                 <span
