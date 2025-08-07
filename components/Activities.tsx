@@ -45,7 +45,7 @@ export default function Activities() {
 
 
     return (
-        <div>
+        <div id={'activities'}>
             <motion.div
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}

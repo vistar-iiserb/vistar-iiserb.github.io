@@ -43,9 +43,9 @@ export default function Navbar() {
 
     return (
         <header
-            className=" z-[99999]  mx-auto mt-4 md:mt-12 bg-white rounded-[20px]   p-4 text-gray-800 tracking-tight  flex flex-row  items-center justify-between">
+            className=" z-[99999]  mx-auto mt-4 md:mt-12 bg-white rounded-[20px] border shadow-sm  p-4 text-gray-800 tracking-tight  flex flex-row  items-center justify-between">
             <div
-                className="cursor-pointer flex justify-between   w-full z-[99999]  group   items-center  text-md">
+                className="cursor-pointer flex justify-between    w-full z-[99999]  group   items-center  text-md">
                 <span className={'flex items-center gap-2 font-bold'}> <BotMessageSquare />VISTAR</span>
                 <div className={'gap-6 md:flex hidden items-center overflow-hidden'}>
 
