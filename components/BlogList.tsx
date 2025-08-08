@@ -31,11 +31,11 @@ const Blog = ({posts}: { posts: BlogListType[] }) => {
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
                 exit={{opacity: 0, y: 20}}
-                className={classNames(" bg-white min-h-screenHeightWithoutHeader")}
+                className={classNames(" bg-white py-12 mb-12 ")}
             >
                 <h1 className={'ml-12 text-4xl font-bold mt-12 text-black  '}>Our Latest Blogs</h1>
                 <div
-                    className="w-full mt-12   bg-white flex   mx-auto p-2 md:p-8 min-h-screen justify-between  ">
+                    className="w-full mt-12   bg-white flex   mx-auto p-2 md:p-8 justify-between  ">
 
                     <div className="  grid grid-cols-1 md:grid-cols-3 w-full gap-6 capitalize">
                         {posts &&

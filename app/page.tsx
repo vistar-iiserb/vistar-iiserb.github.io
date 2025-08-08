@@ -26,7 +26,7 @@ export default function Home() {
                 <Activities/>
                 <Blogs/>
             </main>
-            {/*<JoinClub/>*/}
+            <JoinClub/>
             <Footer/>
         </div>
     )

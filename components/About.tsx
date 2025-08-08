@@ -49,13 +49,6 @@ export default function About() {
                         We organize a diverse range of activities including hands-on workshops, student-led research
                         projects, reading groups, and foundational classes—designed to develop both theoretical
                         understanding and practical AI skills.
-
-                        <br/> <br/>
-                        In addition to on-campus activities, we collaborate with academic institutions and non-profit
-                        organizations that share our goal of making AI more accessible and equitable. Through expert
-                        lectures, panel discussions, and small-group sessions with leaders in the AI space, the club
-                        provides students with valuable learning and networking opportunities that extend beyond the
-                        classroom.
                     </p>
                     {/*<div className="absolute bottom-0 right-0 blur-[150px] bg-blue-400  w-[200px] h-[200px]" />*/}
                 </div>
