@@ -37,7 +37,7 @@ export default function Navbar() {
         }, {
             id: 5,
             title: "Teams",
-            link: "",
+            link: "/team",
         },
     ];
 

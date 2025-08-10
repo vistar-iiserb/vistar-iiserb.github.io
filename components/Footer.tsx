@@ -10,16 +10,22 @@ export default function Footer() {
                 <div className={'text-center'}>
                     Follow us on
                     <div className={'text-xl mt-4  flex items-center justify-center gap-4'}>
-                        <FaXTwitter />
-                        <FaInstagram  />
-                        <FaLinkedinIn  />
-                        <FaGithub  />
+                        <Link target={'_blank'} href={''}> <FaXTwitter
+                            className={'hover:scale-[1.2] transition duration-100'}/></Link>
+                        <Link target={'_blank'} href={'https://www.instagram.com/vistar.iiserb/'}> <FaInstagram
+                            className={'hover:scale-[1.2] transition duration-100'} size={20}/></Link>
+                        <Link target={'_blank'} href={''}> <FaLinkedinIn
+                            className={'hover:scale-[1.2] transition duration-100'} size={20}/></Link>
+                        <Link target={'_blank'} href={''}> <FaGithub
+                            className={'hover:scale-[1.2] transition duration-100'} size={20}/></Link>
                     </div>
                 </div>
                 <hr className={'mt-12 bg-neutral-700 w-full'}/>
             </div>
             <h1 className={'absolute bottom-2 right-2 text-xs text-neutral-400'}>
-                {'<'}Developed By {'/>'} : <Link href={'https://www.github.com/TanishqSharma2022'}>Tanishq</Link> & <Link href={'https://github.com/JayB71'}>Jay </Link>
+                {'<'}Developed By {'/>'} : <Link
+                href={'https://www.github.com/TanishqSharma2022'}>Tanishq</Link> & <Link
+                href={'https://github.com/JayB71'}>Jay </Link>
             </h1>
         </div>
     )

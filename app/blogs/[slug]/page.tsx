@@ -15,10 +15,9 @@ import {ToastProvider} from "@heroui/react";
 export default async function BlogPostPage({
                                                params,
                                            }: {
-    params: Promise<{ slug: string }>
+    params: { slug: string }
 }) {
-
-    const {slug} = await params;
+    const { slug } = params;
     // const currentUrl = `https://tanishqsharma.vercel.app/blogs/${slug}`; // Adjust this to match your domain
 
 
@@ -31,9 +30,7 @@ export default async function BlogPostPage({
     return (
 
         <div>
-            <div className="w-[80%] mx-auto bg-white p-6 md:p-12">
-
-
+            <div className="w-[50%] mx-auto bg-white p-6 md:p-12">
                 <div className="flex items-center justify-between">
 
                     <div className="">
@@ -49,7 +46,7 @@ export default async function BlogPostPage({
 
                     {/* <div className="w-full h-full bg-[#f8f8dd]/50 rounded-xl absolute "></div> */}
                     <img
-                        className=" w-full h-[400px] md:min-h-[600px] aspect-square  rounded-xl  object-cover"
+                        className=" w-full h-[400px] md:min-h-[600px] aspect-[16/9]  rounded-xl  object-cover"
                         src={urlFor(blogData[0].mainImage).url() as string}
                         alt=""/>
 
