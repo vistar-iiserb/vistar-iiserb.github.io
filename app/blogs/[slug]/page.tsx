@@ -9,6 +9,8 @@ import {portableTextComponents} from "@/components/PortableTextComponent";
 import {Share2} from "lucide-react";
 import ShareButton from "@/components/ShareButton";
 import {ToastProvider} from "@heroui/react";
+export const dynamic = "force-dynamic";
+
 
 export default async function BlogPage({ params }: { params: { slug: string } }) {
     const {slug} = params;

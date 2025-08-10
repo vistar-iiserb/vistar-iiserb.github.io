@@ -10,6 +10,7 @@ import Blogs from "@/app/blogs/page";
 import {ArrowRight, Handshake, Landmark} from "lucide-react";
 import SocialsSidebar from "@/components/SocialsSidebar";
 import {motion} from 'framer-motion'
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -35,14 +36,14 @@ export default function Hero() {
                     transition={{delay: 0.6}}
                 >
 
-                <FlickeringGrid
-                    className="inset-0 z-0 absolute min-h-screen w-full "
-                    squareSize={5}
-                    gridGap={8}
-                    color="white"
-                    maxOpacity={0.3}
-                    flickerChance={0.1}
-                />
+                    <FlickeringGrid
+                        className="inset-0 z-0 absolute min-h-screen w-full "
+                        squareSize={5}
+                        gridGap={8}
+                        color="white"
+                        maxOpacity={0.3}
+                        flickerChance={0.1}
+                    />
                 </motion.div>
                 <div
                     className={'inset-0 z-0 bg-[radial-gradient(circle_1200px_at_center,#0e1014,transparent)]  absolute top-0 left-0 '}/>
@@ -62,7 +63,7 @@ export default function Hero() {
                                     IISER Bhopal
                                 </span>
                                 <span
-                                    className={'shadow-md bg-gradient-to-br from-white via-neutral-500 to-neutral-200  bg-clip-text text-transparent lg:text-8xl text-7xl text-center   px-3 py-1 w-fit rounded-xl '}>
+                                    className={'shadow-md bg-gradient-to-br from-white via-neutral-500 to-neutral-200  bg-clip-text text-transparent lg:text-8xl text-7xl text-center   px-3 py-1 w-fit rounded-xl  '}>
                                     VISTAR
                                 </span>
                                 <span
@@ -86,12 +87,14 @@ export default function Hero() {
                                 <Handshake size={20}/>
                                 Join Us
                             </button>
-                            <button
-                                className={'text-md border group overflow-hidden  group transition duration-500  border-white/20 bg-white text-gray-800 flex items-center gap-2   px-4 py-2 font-medium rounded-md'}>
-                                About
-                                Us
-                                <ArrowRight size={20} className={' '}/>
-                            </button>
+                            <Link href={'/#about'}>
+                                <button
+                                    className={'text-md border group overflow-hidden  group transition duration-500  border-white/20 bg-white text-gray-800 flex items-center gap-2   px-4 py-2 font-medium rounded-md'}>
+                                    About
+                                    Us
+                                    <ArrowRight size={20} className={' '}/>
+                                </button>
+                            </Link>
                         </div>
                     </motion.div>
                 </div>

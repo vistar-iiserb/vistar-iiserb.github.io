@@ -1,6 +1,7 @@
 import Blog from "@/components/BlogList";
 import {sanityFetch} from "@/sanity/lib/client";
 import {PostQuery} from "@/sanity/lib/queries";
+import BlogsWrapper from "@/components/BlogsWrapper";
 
 const Blogs = async () => {
     const posts = await sanityFetch({query: PostQuery})
@@ -16,9 +17,7 @@ const Blogs = async () => {
                         curated to spark your curiosity and expand your horizons.</p>
                 </div>
             </div>
-            <div id={'blogs'}>
-                <Blog posts={posts}/>
-            </div>
+            <BlogsWrapper />
         </div>
     )
 };
