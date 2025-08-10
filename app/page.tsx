@@ -8,7 +8,7 @@ import Activities from "@/components/Activities";
 import JoinClub from "@/components/JoinClub";
 import BlogsWrapper from "@/components/BlogsWrapper";
 
-export default function Home() {
+export default function Page() {
     // useEffect(() => {
     //     (async () => {
     //         const LocomotiveScroll = (await import("locomotive-scroll")).default;
