@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
 import React from "react";
-import Navbar from "@/components/Navbar";
 import {PostQueryBySlug} from "@/sanity/lib/queries";
 import {sanityFetch} from "@/sanity/lib/client";
 import {PortableText} from "next-sanity";
