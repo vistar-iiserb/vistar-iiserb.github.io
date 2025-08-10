@@ -72,7 +72,7 @@ export default function Hero() {
                                 {/*<span className={''}>IISER Bhopal</span>*/}
                             </h1>
                             <p className="mt-12 ml-2  text-neutral-300 text-md">
-                                The Premier AI Club at IISER Bhopal. Explore, innovate, and collaborate at the forefront
+                                The Premier AI Cell at IISER Bhopal. Explore, innovate, and collaborate at the forefront
                                 of Artificial Intelligence. Join us for hands-on workshops, expert talks, and
                                 cutting-edge projects with a community passionate about AI.
                             </p>
@@ -87,21 +87,18 @@ export default function Hero() {
                                 Join Us
                             </button>
                             <button
-                                className={'text-md border border-white/20 bg-white text-gray-800 flex items-center gap-2   px-4 py-2 font-medium rounded-md'}>
+                                className={'text-md border group overflow-hidden  group transition duration-500  border-white/20 bg-white text-gray-800 flex items-center gap-2   px-4 py-2 font-medium rounded-md'}>
                                 About
                                 Us
-                                <ArrowRight size={20}/>
+                                <ArrowRight size={20} className={' '}/>
                             </button>
                         </div>
                     </motion.div>
-                    {/*<img src={'brain.jpg'}*/}
-                    {/*     className={'w-[30%] border border-black/20  z-[10] object-cover aspect-square rounded-xl'}/>*/}
-                    {/*<img src={'brain.jpg'} className={'w-[40%] z-[0] right-6 blur-[100px] absolute object-cover aspect-square rounded-xl'} />*/}
                 </div>
 
-                {/*<div className="absolute w-[200px] h-[200px] blur-[70px] animate-spin dark:bg-rose-500 bg-gray-300 rounded-full top-48 left-48"></div>*/}
-                {/*<div className="absolute w-[300px] h-[200px] blur-[70px] animate-spin dark:bg-blue-500 bg-zinc-400 rounded-full top-48 left-80"></div>*/}
-                {/*<div className="absolute w-[300px] h-[200px] blur-[130px] animate-spin dark:bg-white/50 bg-black/40 rounded-full top-52 left-80"></div>*/}
+                {/*<div className="absolute w-[400px] h-[400px] blur-[370px] animate-spin  bg-gray-500 rounded-full top-48 left-48"></div>*/}
+                {/*<div className="absolute w-[400px] h-[400px] blur-[370px] animate-spin  bg-zinc-800 rounded-full top-48 left-80"></div>*/}
+                {/*<div className="absolute w-[400px] h-[400px] blur-[330px] animate-spin  bg-black/40 rounded-full top-52 left-80"></div>*/}
 
 
             </motion.div>

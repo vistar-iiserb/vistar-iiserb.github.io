@@ -31,9 +31,6 @@ export default async function BlogPostPage({
     return (
 
         <div>
-            <div className="w-full  md:w-[80%] z-[10] mx-auto h-fit ">
-                <Navbar/>
-            </div>
             <div className="w-[80%] mx-auto bg-white p-6 md:p-12">
 
 

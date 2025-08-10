@@ -9,12 +9,12 @@ export default function JoinClub() {
                 <div className={'border p-12 rounded-xl flex min-h-[500px] flex-col bg-white items-center justify-center '}>
                     <FaRegHandshake className={'size-[100px] mb-6 '}/>
                     <span className={'text-3xl font-bold text-center'}>Interested in Collaborating or sponsoring?</span>
-                    <button className={'px-4 py-2 rounded-md border border-neutral-600 mt-8'}>Click here to get in touch</button>
+                    <button className={'px-4 py-2 rounded-md border border-neutral-600 mt-8 hover:bg-neutral-100 hover:underline underline-offset-4'}>Click here to get in touch</button>
                 </div>
                 <div className={'border p-12 rounded-xl flex min-h-[500px] flex-col bg-white items-center justify-center '}>
                     <PiStudentFill className={'size-[100px] mb-6    '}/>
                     <span className={'text-3xl font-bold text-center'}>Want to Join or Get Involved?</span>
-                    <button className={'px-4 py-2 rounded-md border border-neutral-600 mt-8'}>Click here to join the cell</button>
+                    <button className={'px-4 py-2 rounded-md border border-neutral-600 mt-8 hover:bg-neutral-100 hover:underline underline-offset-4'}>Click here to join the cell</button>
                 </div>
 
             </div>

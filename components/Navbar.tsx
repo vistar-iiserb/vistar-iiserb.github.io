@@ -54,7 +54,7 @@ export default function Navbar() {
                             key={navLink.id}
                             href={navLink.link}
                             style={{"--text": `"${navLink.title}"`}}
-                            className=" overflow-hidden "
+                            className=" overflow-hidden hover:underline transition duration-500 underline-offset-4"
                         >
                             <h1 className=" transition">{navLink.title}</h1>
                         </Link>

@@ -27,7 +27,6 @@ export default function Home() {
                 <Blogs/>
             </main>
             <JoinClub/>
-            <Footer/>
         </div>
     )
         ;
