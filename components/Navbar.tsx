@@ -23,17 +23,17 @@ export default function Navbar() {
         {
             id: 2,
             title: "About",
-            link: "#about",
+            link: "/#about",
         },
         {
             id: 3,
             title: "Activities",
-            link: "#activities",
+            link: "/#activities",
         },
         {
             id: 4,
             title: "Blogs",
-            link: "#blogs",
+            link: "/blogs",
         }, {
             id: 5,
             title: "Teams",
@@ -46,7 +46,7 @@ export default function Navbar() {
             className=" z-[99999]  mx-auto mt-4 md:mt-12 bg-white rounded-[20px] border shadow-sm  p-4 text-gray-800 tracking-tight  flex flex-row  items-center justify-between">
             <div
                 className="cursor-pointer flex justify-between    w-full z-[99999]  group   items-center  text-md">
-                <span className={'flex items-center gap-2 font-bold'}> <BotMessageSquare />VISTAR</span>
+                <span className={'flex items-center gap-2 font-bold'}> <BotMessageSquare /></span>
                 <div className={'gap-6 md:flex hidden items-center overflow-hidden'}>
 
                     {navLinks.map((navLink) => (

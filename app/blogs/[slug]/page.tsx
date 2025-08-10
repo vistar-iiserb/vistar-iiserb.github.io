@@ -10,7 +10,7 @@ import {Share2} from "lucide-react";
 import ShareButton from "@/components/ShareButton";
 import {ToastProvider} from "@heroui/react";
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function BlogPage({ params }: { params: { slug: string } }) {
     const {slug} = params;
     // const currentUrl = `https://tanishqsharma.vercel.app/blogs/${slug}`; // Adjust this to match your domain
 

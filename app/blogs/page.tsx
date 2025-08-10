@@ -6,9 +6,19 @@ const Blogs = async () => {
     const posts = await sanityFetch({query: PostQuery})
 
     return (
+        <div className={'md:w-[80%] p-4 text-black text-center mx-auto '}>
+            <div className={' bg-gradient-to-tr from-neutral-900 from-[50%] via-neutral-600 to-neutral-400 border shadow-md  rounded-xl text-center md:p-12 mt-4 text-white py-8 px-1 md:py-24'}>
+                <div className={'w-[70%] mx-auto'}>
 
-        <div id={'blogs'}>
-            <Blog posts={posts}/>
+                    <h1 className={'text-2xl md:text-4xl font-bold'}>Let&apos;s Learn Something Together!</h1>
+                    <p className={'text-sm md:text-lg text-neutral-400 mt-4'}>Are you ready to dive into a world of
+                        fascinating stories and insightful articles? Here are some of our latest blogs, carefully
+                        curated to spark your curiosity and expand your horizons.</p>
+                </div>
+            </div>
+            <div id={'blogs'}>
+                <Blog posts={posts}/>
+            </div>
         </div>
     )
 };
