@@ -15,6 +15,18 @@ const config: Config = {
       animation: {
         spin: "spin 4s linear infinite",
         "spin-paused": "spin 4s linear paused",
+        shimmer: "shimmer 2s linear infinite"
+        },
+
+      keyframes:{
+        shimmer: {
+              from: {
+                "backgroundPosition": "0 0"
+              },
+              to: {
+                "backgroundPosition": "-200% 0"
+              }
+            }
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

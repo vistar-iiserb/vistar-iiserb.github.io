@@ -57,7 +57,7 @@ export default function Activities() {
                 <div className={'w-full grid grid-cols-1 md:grid-cols-3 gap-12 mb-12'}>
                     {
                         activityContent.map(activity => (
-                            <div key={activity.id} className={'border border-neutral-300 p-6 rounded-xl shadow-lg  '}>
+                            <div key={activity.id} className={'group hover:-translate-y-2 transition duration-500 border border-neutral-300 p-6 rounded-xl shadow-lg  '}>
                                 <div className={' bg-black rounded-full p-2 w-fit text-white'}>
 
                                     {activity.icon}

@@ -12,6 +12,7 @@ import {
 import {Button} from "@heroui/button";
 import {ModeToggle} from "./DarkModeToggle";
 import {BotMessageSquare} from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
     const navLinks = [
@@ -46,7 +47,10 @@ export default function Navbar() {
             className=" z-[99999]  mx-auto mt-4 md:mt-12 bg-white rounded-[20px] border shadow-sm  p-4 text-gray-800 tracking-tight  flex flex-row  items-center justify-between">
             <div
                 className="cursor-pointer flex justify-between    w-full z-[99999]  group   items-center  text-md">
-                <span className={'flex items-center gap-2 font-bold'}> <BotMessageSquare /></span>
+                <span className={'flex items-center gap-2 font-bold'}>
+                    <Image width={2200} height={2200} className="w-12 h-12 object-contain" src="/file.svg" alt="IISERB Logo" />
+                    <Image width={2200} height={2200} className="w-12 h-12 object-contain" src="/dse.svg" alt="IISERB Logo" />
+                </span>
                 <div className={'gap-6 md:flex hidden items-center overflow-hidden'}>
 
                     {navLinks.map((navLink) => (

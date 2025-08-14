@@ -48,37 +48,30 @@ export default function Hero() {
                 <div
                     className={'inset-0 z-0 bg-[radial-gradient(circle_1200px_at_center,#0e1014,transparent)]  absolute top-0 left-0 '}/>
                 <div
-                    className="w-full z-[10] items-center mb-24 flex  flex-col   justify-between h-[80%]   text-gray-200      ">
+                    className="w-full z-[10] items-center  flex  flex-col   justify-between    text-gray-200      ">
                     <motion.div
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}
                         exit={{opacity: 0, y: 20}}
                         transition={{delay: 0.4}}
-                        className="flex flex-col  p-6 md:p-12 mx-auto items-center justify-between ">
-                        <div className={` flex flex-col z-[10] md:w-[50%] mx-auto mt-12 `}>
-                            <h1 className="font-bold ml-2 text-center items-center  flex flex-col md:mt-0 mt-24">
+                        className="flex flex-col  mx-auto mb-12 py-12 items-center justify-between ">
+                        <div className={` flex flex-col  z-[10] md:w-[50%] mx-auto mt-12 `}>
+                            
+                            <h1 className="font-bold  text-center items-center  flex flex-col md:mt-0 mt-24">
+                                {/* <div className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 "></div> */}
                                 <span
-                                    className={'text-xs mb-4 flex items-center gap-2  rounded-[30px]  uppercase mx-auto text-neutral-900 bg-white border border-white/20 w-fit py-2 px-3'}>
-                                <Landmark size={17}/>
-                                    IISER Bhopal
-                                </span>
-                                <span
-                                    className={'shadow-md bg-gradient-to-br from-white via-neutral-500 to-neutral-200  bg-clip-text text-transparent lg:text-8xl text-7xl text-center   px-3 py-1 w-fit rounded-xl  '}>
+                                    className={'shadow-md bg-gradient-to-br from-white via-neutral-500 to-neutral-200  bg-clip-text text-transparent lg:text-9xl text-7xl text-center   px-3 py-1 w-fit rounded-xl  '}>
                                     VISTAR
                                 </span>
                                 <span
-                                    className={'shadow-md text-xl uppercase mt-4  text-white px-3 py-1 w-fit rounded-xl '}>
-                                    Vision for Technology and Artificial Intelligence Research
+                                    className={'shadow-md text-xl mt-6  text-white px-3 py-1 w-fit font-black rounded-xl '}>
+                                    VISion for Technology and Artificial intelligence Research
                                 </span>
-                                {/*<span className={''}>IISER Bhopal</span>*/}
                             </h1>
-                            <p className="mt-12 ml-2  text-neutral-300 text-md">
-                                The Premier AI Cell at IISER Bhopal. Explore, innovate, and collaborate at the forefront
-                                of Artificial Intelligence. Join us for hands-on workshops, expert talks, and
-                                cutting-edge projects with a community passionate about AI.
+                            <p className=" mt-4 ml-2  text-neutral-300 text-md">
+                                The Artificial Intelligence Student Cell at IISER Bhopal. Explore, innovate, and collaborate at the forefront
+                                of Artificial Intelligence. Join us for hands-on workshops, expert talks, and cutting-edge projects with a community passionate about Artificial Intelligence.
                             </p>
-
-
                         </div>
 
                         <div className={'mt-10 flex gap-4'}>
@@ -113,3 +106,31 @@ export default function Hero() {
         // </PageWrapper>
     );
 }
+
+
+
+/* 
+
+        // Button code
+        <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          Shimmer
+        </button>
+  
+        // tailwind.config.js code
+        {
+          "animation": {
+            shimmer: "shimmer 2s linear infinite"
+          },
+          "keyframes": {
+            shimmer: {
+              from: {
+                "backgroundPosition": "0 0"
+              },
+              to: {
+                "backgroundPosition": "-200% 0"
+              }
+            }
+          }
+        }
+      
+*/
