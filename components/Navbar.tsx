@@ -63,7 +63,9 @@ export default function Navbar() {
                             <h1 className=" transition">{navLink.title}</h1>
                         </Link>
                     ))}
-                    <button className={'bg-black text-white py-2  rounded-xl px-4'}>Join Us</button>
+                    <Link href={'/contact'}>
+                    <button className={'bg-black hover:bg-black/80 transition duration-500 text-white py-2  rounded-xl px-4'}>Join Us</button>
+                    </Link>
                 </div>
             </div>
 
