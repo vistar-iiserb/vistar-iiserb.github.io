@@ -44,12 +44,16 @@ export default function Navbar() {
 
     return (
         <header
-            className=" z-[99999]  mx-auto mt-4 md:mt-12 bg-white rounded-[20px] border shadow-sm  p-4 text-gray-800 tracking-tight  flex flex-row  items-center justify-between">
+            className=" z-[99999]  mx-auto mt-0 md:mt-12 bg-white rounded-[20px] border shadow-sm  p-4 text-gray-800 tracking-tight  flex flex-row  items-center justify-between">
             <div
                 className="cursor-pointer flex justify-between    w-full z-[99999]  group   items-center  text-md">
                 <span className={'flex items-center gap-2 font-bold'}>
+                 <Link href={'https://iiserb.ac.in'} target="_blank">
                     <Image width={2200} height={2200} className="w-12 h-12 object-contain" src="/file.svg" alt="IISERB Logo" />
+                 </Link>   
+                 <Link href={'https://dse.iiserb.ac.in'} target="_blank">
                     <Image width={2200} height={2200} className="w-12 h-12 object-contain" src="/dse.svg" alt="IISERB Logo" />
+                </Link>
                 </span>
                 <div className={'gap-6 md:flex hidden items-center overflow-hidden'}>
 
@@ -64,7 +68,7 @@ export default function Navbar() {
                         </Link>
                     ))}
                     <Link href={'/contact'}>
-                    <button className={'bg-black hover:bg-black/80 transition duration-500 text-white py-2  rounded-xl px-4'}>Join Us</button>
+                    <button className={'bg-zinc-900 hover:bg-black transition duration-500 text-white py-2  rounded-xl px-4'}>Join Us</button>
                     </Link>
                 </div>
             </div>

@@ -62,7 +62,7 @@ const Blog = ({posts}: { posts: BlogListType[] }) => {
 
                                             <img
                                                 src={urlFor(post.mainImage).url() as string} alt=""
-                                                className=" duration-[0.6s] object-cover w-full aspect-[16/12] rounded-xl "/>
+                                                className=" duration-[0.6s] group-hover:scale-[1.01] object-cover w-full aspect-[16/12] rounded-xl "/>
                                         </div>
 
                                     </div>

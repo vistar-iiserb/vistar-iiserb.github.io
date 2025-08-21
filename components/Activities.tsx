@@ -52,7 +52,7 @@ export default function Activities() {
                 exit={{opacity: 0, y: 20}}
                 className={classNames(" bg-white  p-12")}
             >
-                <h1 className={' text-4xl font-bold  mb-12 text-black  '}>Our Activities</h1>
+                <h1 className={' text-4xl font-bold  mb-12 text-black text-shadow-md drop-shadow-md'}>Our Activities</h1>
 
                 <div className={'w-full grid grid-cols-1 md:grid-cols-3 gap-12 mb-12'}>
                     {

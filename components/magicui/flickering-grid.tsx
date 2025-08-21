@@ -98,6 +98,8 @@ export const FlickeringGrid: React.FC<FlickeringGridProps> = ({
       ctx.fillStyle = "transparent";
       ctx.fillRect(0, 0, width, height);
 
+
+
       for (let i = 0; i < cols; i++) {
         for (let j = 0; j < rows; j++) {
           const opacity = squares[i * rows + j];

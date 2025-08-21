@@ -37,12 +37,13 @@ export default function Hero() {
                 >
 
                     <FlickeringGrid
-                        className="inset-0 z-0 absolute min-h-screen w-full "
-                        squareSize={5}
-                        gridGap={8}
-                        color="white"
-                        maxOpacity={0.3}
-                        flickerChance={0.1}
+                        className="inset-0 z-0  absolute min-h-screen w-full "
+                        squareSize={20}
+                        gridGap={1}
+                        color="gray"
+                        maxOpacity={0.1}
+                        flickerChance={0.05}
+                        
                     />
                 </motion.div>
                 <div
