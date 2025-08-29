@@ -32,7 +32,7 @@ jobs:
     env: # 👈 Make env available to ALL steps in this job
       NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
       NEXT_PUBLIC_SANITY_DATASET: ${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
-      SANITY_API_READ_TOKEN: ${{ secrets.SANITY_API_READ_TOKEN }}
+      NEXT_PUBLIC_SANITY_API_READ_TOKEN: ${{ secrets.NEXT_PUBLIC_SANITY_API_READ_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
