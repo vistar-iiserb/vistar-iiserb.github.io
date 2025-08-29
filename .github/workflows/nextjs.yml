@@ -24,6 +24,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+
 jobs:
   # Build job
   build:
@@ -75,6 +76,10 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        with:
+          NEXT_PUBLIC_SANITY_PROJECT_ID: ${{env.NEXT_PUBLIC_SANITY_PROJECT_ID}}
+          NEXT_PUBLIC_SANITY_DATASET: ${{env.NEXT_PUBLIC_SANITY_DATASET}}
+          SANITY_API_READ_TOKEN: ${{env.SANITY_API_READ_TOKEN}}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
