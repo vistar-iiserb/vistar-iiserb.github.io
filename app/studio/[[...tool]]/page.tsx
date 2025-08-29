@@ -17,3 +17,8 @@ export { metadata, viewport } from 'next-sanity/studio'
 export default function StudioPage() {
   return <NextStudio config={config} />
 }
+
+
+export async function generateStaticParams() {
+  return [];
+}
