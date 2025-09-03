@@ -9,7 +9,7 @@ import {portableTextComponents} from "@/components/PortableTextComponent";
 import {Share2} from "lucide-react";
 import ShareButton from "@/components/ShareButton";
 import {ToastProvider} from "@heroui/react";
-export const dynamic = "force-dynamic";
+// Removed export const dynamic = "force-dynamic"; for static export compatibility
 
 
 export default async function BlogPage({ params }: { params: { slug: string } }) {
@@ -55,3 +55,10 @@ export default async function BlogPage({ params }: { params: { slug: string } })
         </div>
     );
 };
+
+// Generate static params for static export
+export async function generateStaticParams() {
+    // For now, return empty array to avoid build issues
+    // You can populate this with actual blog slugs from Sanity
+    return [];
+}

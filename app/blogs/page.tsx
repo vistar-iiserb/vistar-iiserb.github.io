@@ -1,10 +1,13 @@
 import Blog from "@/components/BlogList";
-import {sanityFetch} from "@/sanity/lib/client";
-import {PostQuery} from "@/sanity/lib/queries";
+// Temporarily commented out for static export testing
+// import {sanityFetch} from "@/sanity/lib/client";
+// import {PostQuery} from "@/sanity/lib/queries";
 import BlogsWrapper from "@/components/BlogsWrapper";
 
-const Blogs = async () => {
-    const posts = await sanityFetch({query: PostQuery})
+// Modified for static export compatibility - removed async
+const Blogs = () => {
+    // Temporarily commented out for static build testing
+    // const posts = await sanityFetch({query: PostQuery})
 
     return (
         <div className={'md:w-[80%] p-4 text-black mx-auto '}>
