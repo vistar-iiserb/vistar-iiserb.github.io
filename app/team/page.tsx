@@ -1,8 +1,26 @@
 export default function Team() {
 
-    const teams = [
+    const teams: { id: number; title: string; members: { id: number; name: string; batch?: string }[] }[] = [
         {
             id: 0,
+            title: "Faculty Advisors",
+            members: [
+                {
+                    id: 1,
+                    name: "Dr. Akshay Agarwal",
+                },
+                {
+                    id: 2,
+                    name: "Dr. Akash Anil",
+                },
+                {
+                    id: 3,
+                    name: "Dr. Vinod Kurmi",
+                },
+            ]
+        },
+        {
+            id: 1,
             title: "Coordinators",
             members: [
                 {
@@ -23,7 +41,7 @@ export default function Team() {
             ]
         },
         {
-            id: 1,
+            id: 2,
             title: "Core Members",
             members: [
                 {
@@ -76,7 +94,7 @@ export default function Team() {
                                     <img className={'shadow-md rounded-xl'}
                                          src={`https://cdn.jsdelivr.net/gh/alohe/memojis/png/notion_${member.id}.png`}/>
                                     <h2 className={'mt-6 font-bold'}>{member.name}</h2>
-                                    <h2 className={'mt-2'}>Batch {member.batch}</h2>
+                                    { member.batch ? <h2 className={'mt-2'}>Batch {member.batch}</h2> : null}
                                 </div>
 
                             ))

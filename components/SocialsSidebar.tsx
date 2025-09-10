@@ -2,6 +2,7 @@ import {Instagram, Linkedin, Twitter} from "lucide-react";
 import {FaGithub, FaInstagram, FaLinkedinIn} from "react-icons/fa";
 import {BiX} from "react-icons/bi";
 import {FaX, FaXTwitter, FaYoutube} from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
 import Link from 'next/link'
 
 export default function SocialsSidebar() {
@@ -11,9 +12,9 @@ export default function SocialsSidebar() {
             {/* <Link target={'_blank'} href={''}> <FaXTwitter className={'hover:scale-[1.2] transition duration-100'}/></Link>
             <Link target={'_blank'} href={'https://www.instagram.com/vistar.iiserb/'}> <FaInstagram
                 className={'hover:scale-[1.2] transition duration-100'} size={20}/></Link> */}
-            <Link target={'_blank'} href={''}> <FaYoutube className={'hover:scale-[1.2] transition duration-100'} size={20}/></Link>
+            <Link target={'_blank'} href={'https://www.youtube.com/@vistar.iiserb'}> <FaYoutube className={'hover:scale-[1.2] transition duration-100'} size={20}/></Link>
+            <Link target={'_blank'} href={'mailto:vistar.iiserb@gmail.com'}> <IoMdMail className={'hover:scale-[1.2] transition duration-100'} size={20}/></Link>
             <Link target={'_blank'} href={''}> <FaLinkedinIn className={'hover:scale-[1.2] transition duration-100'} size={20}/></Link>
-            <Link target={'_blank'} href={''}> <FaGithub className={'hover:scale-[1.2] transition duration-100'} size={20}/></Link>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import Link from "next/link";
 
 export default function Footer() {
@@ -10,14 +11,14 @@ export default function Footer() {
                 <div className={'text-center'}>
                     Follow us on
                     <div className={'text-xl mt-4  flex items-center justify-center gap-4'}>
-                        <Link target={'_blank'} href={''}>
+                        <Link target={'_blank'} href={'https://www.youtube.com/@vistar.iiserb'}>
                             <FaYoutube className={'hover:scale-[1.2] transition duration-100'} size={20} />
+                        </Link>
+                        <Link target={'_blank'} href={'mailto:vistar.iiserb@gmail.com'}>
+                            <IoMdMail className={'hover:scale-[1.2] transition duration-100'} size={20} />
                         </Link>
                         <Link target={'_blank'} href={''}>
                             <FaLinkedinIn className={'hover:scale-[1.2] transition duration-100'} size={20} />
-                        </Link>
-                        <Link target={'_blank'} href={''}>
-                            <FaGithub className={'hover:scale-[1.2] transition duration-100'} size={20} />
                         </Link>
                     </div>
                 </div>
