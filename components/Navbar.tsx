@@ -64,11 +64,11 @@ export default function Navbar() {
                             style={{"--text": `"${navLink.title}"`}}
                             className=" overflow-hidden hover:underline transition duration-500 underline-offset-4"
                         >
-                            <h1 className=" transition">{navLink.title}</h1>
+                            <h1 className="tracking-tight transition">{navLink.title}</h1>
                         </Link>
                     ))}
                     <Link href={'/contact'}>
-                    <button className={'bg-zinc-900 hover:bg-black transition duration-500 text-white py-2  rounded-xl px-4'}>Join Us</button>
+                    <button className={'bg-zinc-900 hover:bg-black tracking-tighter transition duration-500 text-white py-2  rounded-xl px-4'}>Join Us</button>
                     </Link>
                 </div>
             </div>

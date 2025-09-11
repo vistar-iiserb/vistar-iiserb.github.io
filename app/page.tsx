@@ -15,7 +15,7 @@ export default function Page() {
                 <About/>
                 <Activities/>
                 <VideoSection/>
-                <BlogsWrapper/>
+                {/* <BlogsWrapper/> */}
             </main>
             <JoinClub/>
         </div>

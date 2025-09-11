@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 export default function Team() {
 
-    const teams: { id: number; title: string; members: { id: number; name: string; batch?: string }[] }[] = [
+    const teams: { id: number; title: string; members: { id: number; name: string; image?: string, batch?: string }[] }[] = [
         {
             id: 0,
             title: "Faculty Advisors",
@@ -8,14 +10,18 @@ export default function Team() {
                 {
                     id: 1,
                     name: "Dr. Akshay Agarwal",
+                    image: "/akshayagarwal.jpeg"
                 },
                 {
                     id: 2,
                     name: "Dr. Akash Anil",
+                    image: "/akashanil.jpg"
+
                 },
                 {
                     id: 3,
                     name: "Dr. Vinod Kurmi",
+                    image: "/vinodkurmi.jpg"
                 },
             ]
         },
@@ -84,15 +90,19 @@ export default function Team() {
                 <div key={team.id}>
                     <div className={'relative flex items-center justify-center'}>
                         <div className={'w-full h-[1px] bg-neutral-500 z-[0] absolute'}/>
-                        <h1 className={'text-black font-bold text-4xl z-[10]  uppercase bg-white px-6 mt-12 mb-12'}>{team.title}</h1>
+                        <h1 className={'text-black font-bold text-4xl z-[10]  uppercase bg-white px-6 tracking-tight mt-12 mb-12'}>{team.title}</h1>
                     </div>
-                    <div className={'grid grid-cols-1 justify-center place-items-center md:grid-cols-3 gap-12'}>
+                    <div className={'grid grid-cols-1 justify-center place-items-center md:grid-cols-3    gap-12'}>
 
                         {
                             team.members.map(member => (
                                 <div key={member.id} className={''}>
-                                    <img className={'shadow-md rounded-xl'}
-                                         src={`https://cdn.jsdelivr.net/gh/alohe/memojis/png/notion_${member.id}.png`}/>
+                                    <Image 
+                                    width={100}
+                                    height={100}
+                                    alt={member.name}
+                                    className={'shadow-md rounded-xl w-[200px] h-[200px] object-cover aspect-square max-w-[200px]'}
+                                         src={member.image ? member.image : `https://cdn.jsdelivr.net/gh/alohe/memojis/png/notion_${member.id}.png`}/>
                                     <h2 className={'mt-6 font-bold'}>{member.name}</h2>
                                     { member.batch ? <h2 className={'mt-2'}>Batch {member.batch}</h2> : null}
                                 </div>

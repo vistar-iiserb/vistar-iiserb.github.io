@@ -52,7 +52,7 @@ export default function Activities() {
                 exit={{opacity: 0, y: 20}}
                 className={classNames(" bg-white  p-12")}
             >
-                <h1 className={' text-4xl font-bold  mb-12 text-black text-shadow-md drop-shadow-md'}>Our Activities</h1>
+                <h1 className={'tracking-tight text-4xl font-bold  mb-12 text-black text-shadow-md drop-shadow-md'}>Our Activities</h1>
 
                 <div className={'w-full grid grid-cols-1 md:grid-cols-3 gap-12 mb-12'}>
                     {
@@ -63,7 +63,7 @@ export default function Activities() {
                                     {activity.icon}
                                 </div>
                                 <div>
-                                    <h1 className={'font-bold text-md text-black  mt-4 mb-2'}>{activity.heading}</h1>
+                                    <h1 className={'tracking-tight font-bold text-md text-black  mt-4 mb-2'}>{activity.heading}</h1>
                                     <p className={'text-sm text-neutral-500'}>{activity.description}</p>
                                 </div>
                             </div>

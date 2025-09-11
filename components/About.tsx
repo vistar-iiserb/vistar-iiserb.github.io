@@ -15,7 +15,7 @@ export default function About() {
             className=" bg-white   w-full pb-24  px-6   relative group shadow-sm "
         >
             <h1
-                className={` font-bold ml-6 text-4xl md:text-6xl mt-6 text-gray-800  `}
+                className={`tracking-tight font-bold ml-6 text-4xl md:text-6xl mt-6 text-gray-800  `}
             >
                 About&nbsp;
                 <span className={'bg-gradient-to-br from-black via-neutral-600 to-neutral-200  bg-clip-text text-transparent '}>
