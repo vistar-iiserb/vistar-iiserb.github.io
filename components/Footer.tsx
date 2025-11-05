@@ -17,7 +17,7 @@ export default function Footer() {
                         <Link target={'_blank'} href={'mailto:vistar.iiserb@gmail.com'}>
                             <IoMdMail className={'hover:scale-[1.2] transition duration-100'} size={20} />
                         </Link>
-                        <Link target={'_blank'} href={''}>
+                        <Link target={'_blank'} href={'https://www.linkedin.com/company/vistar-iiserb'}>
                             <FaLinkedinIn className={'hover:scale-[1.2] transition duration-100'} size={20} />
                         </Link>
                     </div>
