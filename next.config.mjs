@@ -3,7 +3,14 @@ const nextConfig = {
     output: 'export',
     trailingSlash: true,
     images: {
-        unoptimized: true
+        unoptimized: true,
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'github.com',
+                pathname: '/**',
+            },
+        ],
     },
     typescript: {
         ignoreBuildErrors: true,
