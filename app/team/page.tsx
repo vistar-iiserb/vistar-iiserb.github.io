@@ -229,7 +229,7 @@ export default function Team() {
                                     width={100}
                                     height={100}
                                     alt={member.name}
-                                    className={'shadow-md rounded-xl w-[200px] h-[200px] object-cover aspect-square max-w-[200px]'}
+                                    className={'shadow-md rounded-xl w-[200px] h-[200px] object-cover object-top aspect-square max-w-[200px]'}
                                          src={member.image ? member.image : `https://cdn.jsdelivr.net/gh/alohe/memojis/png/notion_${member.id}.png`}/>
                                     <h2 className={'mt-6 font-bold'}>{member.name}</h2>
                                     {member.bio && (
@@ -282,7 +282,7 @@ export default function Team() {
                                 width={100}
                                 height={100}
                                 alt={member.name}
-                                className="aspect-square h-[200px] w-[200px] max-w-[200px] rounded-xl object-cover shadow-md"
+                                className="aspect-square h-[200px] w-[200px] max-w-[200px] rounded-xl object-cover object-top shadow-md"
                                 src={member.image ? member.image : `https://cdn.jsdelivr.net/gh/alohe/memojis/png/notion_${member.id}.png`}
                             />
                             <h2 className="mt-6 font-bold">{member.name}</h2>
