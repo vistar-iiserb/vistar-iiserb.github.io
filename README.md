@@ -92,6 +92,7 @@ vistar-iiserb.github.io/
 │   ├── about/             # About page
 │   ├── blogs/             # Blog pages
 │   ├── contact/           # Contact page
+│   ├── hackathon/         # Hackathon teams board
 │   └── team/              # Team page
 ├── components/            # React components
 ├── sanity/               # Sanity CMS configuration
@@ -99,6 +100,32 @@ vistar-iiserb.github.io/
 ├── utils/                # Utility functions
 └── .github/workflows/    # GitHub Actions workflows
 ```
+
+## Hackathon teams board
+
+The `/hackathon` board is a static, client-rendered view of the registered teams.
+Add or update entries in `public/data/teams-registry.json` using the
+`teamName`, `repo` (`owner/name`), and manually maintained `members` fields.
+For example:
+
+```json
+{
+  "teamName": "Team Alpha",
+  "repo": "owner/repo",
+  "members": ["Aarav Sharma", "Isha Patel"]
+}
+```
+
+The scheduled
+`sync-hackathon.yml` workflow uses the repository's `GITHUB_TOKEN` to refresh
+`public/data/teams-status.json`.
+
+Status-only commits include `[skip ci]`, and the deployment workflow ignores
+`public/data/**`, so routine 15-minute updates do not rebuild the site. The sync
+keeps the previous status when unexpected API failures are below the configured
+threshold, treats inaccessible repositories as neutral, and writes the output
+atomically. On the deployed site, the board reads the latest status JSON from
+the repository's raw GitHub URL; local development reads the local JSON file.
 
 ## 🔧 Key Configuration Files
 

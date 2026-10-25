@@ -29,6 +29,16 @@ export default function Hero() {
                     className="w-full md:w-[85%] z-[10] mx-auto h-fit ">
                     <Navbar />
                 </motion.div>
+                <Link
+                    href="/events"
+                    className="z-[10] mx-auto mt-8 inline-flex items-center gap-3 rounded-md border border-white/20 bg-black/30 px-5 py-2.5 text-sm font-medium tracking-tight text-neutral-200 transition hover:border-white/40 hover:bg-black/50 hover:text-white"
+                >
+                    <span className="h-2 w-2 rounded-full bg-emerald-400" />
+                    Ongoing AI Safety Hackathon
+                    <span className="text-neutral-500">·</span>
+                    View event
+                    <ArrowRight size={16} />
+                </Link>
                 <motion.div
                     initial={{ opacity: 0, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
