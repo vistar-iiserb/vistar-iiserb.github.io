@@ -35,10 +35,16 @@ export default function Navbar() {
             id: 4,
             title: "Blogs",
             link: "/blogs",
-        }, {
+        },
+        {
             id: 5,
             title: "Teams",
             link: "/team",
+        },
+        {
+            id: 6,
+            title: "Events",
+            link: "/events",
         },
     ];
 
@@ -87,18 +93,21 @@ export default function Navbar() {
                         </DropdownItem>
 
                         <DropdownItem key="new2">
-                            <Link href={"#about"}>About</Link>
+                            <Link href={"/about"}>About</Link>
                         </DropdownItem>
 
                         <DropdownItem key="new3">
-                            <Link href={"#blogs"}>Blogs</Link>
+                            <Link href={"/blogs"}>Blogs</Link>
                         </DropdownItem>
 
                         <DropdownItem key="new4">
-                            <Link href={"#"}>Activities</Link>
+                            <Link href={"/#activities"}>Activities</Link>
                         </DropdownItem>
                         <DropdownItem key="new5">
-                            <Link href={"#"}>Team</Link>
+                            <Link href={"/team"}>Team</Link>
+                        </DropdownItem>
+                        <DropdownItem key="new6">
+                            <Link href={"/events"}>Events</Link>
                         </DropdownItem>
 
                     </DropdownMenu>
