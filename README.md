@@ -103,7 +103,8 @@ vistar-iiserb.github.io/
 
 ## Hackathon teams board
 
-The `/hackathon` board is a static, client-rendered view of the registered teams.
+The `/hackathon` board is a static, client-rendered view of the registered teams
+and their repository status.
 Add or update entries in `public/data/teams-registry.json` using the
 `teamName`, `repo` (`owner/name`), and manually maintained `members` fields.
 For example:
@@ -116,16 +117,7 @@ For example:
 }
 ```
 
-The scheduled
-`sync-hackathon.yml` workflow uses the repository's `GITHUB_TOKEN` to refresh
-`public/data/teams-status.json`.
-
-Status-only commits include `[skip ci]`, and the deployment workflow ignores
-`public/data/**`, so routine 15-minute updates do not rebuild the site. The sync
-keeps the previous status when unexpected API failures are below the configured
-threshold, treats inaccessible repositories as neutral, and writes the output
-atomically. On the deployed site, the board reads the latest status JSON from
-the repository's raw GitHub URL; local development reads the local JSON file.
+The board reads its status data from `public/data/teams-status.json`.
 
 ## 🔧 Key Configuration Files
 

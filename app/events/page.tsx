@@ -25,7 +25,7 @@ const events: Event[] = [
         registrationUrl: "/hackathon",
         timelineUrl: "/timeline.jpeg",
         moreInfoUrl: "https://www.canva.com/design/DAHYow1GDEU/se9zRFqxypVOgjJVmOxwbQ/view",
-        isCurrent: true,
+        isCurrent: false,
     },
 ];
 

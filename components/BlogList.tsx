@@ -5,8 +5,6 @@ import Link from "next/link";
 import React, {useEffect, useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
 import classNames from "classnames";
-import {urlFor} from "@/sanity/lib/image";
-import {ArrowTopRightIcon} from "@sanity/icons";
 import {ArrowRight, ChevronRight} from "lucide-react";
 
 
@@ -61,7 +59,7 @@ const Blog = ({posts}: { posts: BlogListType[] }) => {
 
 
                                             <img
-                                                src={urlFor(post.mainImage).url() as string} alt=""
+                                                src={post.mainImage} alt=""
                                                 className=" duration-[0.6s] group-hover:scale-[1.01] object-cover w-full aspect-[16/12] rounded-xl "/>
                                         </div>
 

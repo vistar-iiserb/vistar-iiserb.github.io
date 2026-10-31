@@ -9,7 +9,6 @@ type TeamStatus = {
     repoUrl: string;
     primaryLanguage: string | null;
     lastActivity: string | null;
-    syncedAt?: string;
     status: "active" | "idle" | "unreachable";
 };
 
@@ -96,7 +95,6 @@ export default function HackathonBoard() {
     const [language, setLanguage] = useState("All languages");
     const [activityStatus, setActivityStatus] = useState("All activity");
     const [now, setNow] = useState<number | null>(null);
-    const [lastSynced, setLastSynced] = useState<string | null>(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
@@ -118,7 +116,6 @@ export default function HackathonBoard() {
                         ? data.map((team) => ({ ...team, members: Array.isArray(team.members) ? team.members : [] }))
                         : [];
                     setTeams(normalizedTeams);
-                    setLastSynced(normalizedTeams.find((team) => team.syncedAt)?.syncedAt ?? null);
                 }
             })
             .catch(() => {
@@ -148,11 +145,6 @@ export default function HackathonBoard() {
 
     return (
         <section aria-label="Hackathon teams">
-            {lastSynced && now !== null && (
-                <p className="mb-4 text-xs text-neutral-500">
-                    Last synced {formatRelativeActivity(lastSynced, now)}
-                </p>
-            )}
             <div className="mb-8 flex flex-col gap-4 rounded-2xl border border-[#30302b] bg-[#191815] p-4 sm:flex-row">
                 <label className="relative flex-1">
                     <Search size={17} className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-500" />
